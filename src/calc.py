@@ -94,3 +94,34 @@ def multiplica(a, b):
          Retorna el resultado de la mutiplicacion de a + b
     """
     return a * b
+
+
+def division(a, b):
+    if b == 0:
+        raise Exception("el divisor no puede ser 0")
+
+    return a / b
+
+
+def resta(a, b):
+    return a - b
+
+
+def execute_operation(operation: str):
+    ok, oper_a, op, oper_b = parse_input(operation)
+    if ok:
+        a = parse_float(oper_a)
+        b = parse_float(oper_b)
+        if op == "+":
+            return suma(a, b)
+
+        if op == "-":
+            return resta(a, b)
+
+        if op == "*":
+            return multiplica(a, b)
+
+        if op == "/":
+            return division(a, b)
+    else:
+        raise Exception("no se puede ejecutar la operacion")
