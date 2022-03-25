@@ -31,3 +31,5 @@ def parse_float(operator: str):
 
     return float(operator)
 
+def multiplica(a, b):
+    return a * b
