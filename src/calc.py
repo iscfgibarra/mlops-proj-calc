@@ -31,3 +31,6 @@ def parse_float(operator: str):
 
     return float(operator)
 
+def suma(a,b):
+    return a + b
+
