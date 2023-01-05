@@ -1,4 +1,4 @@
-from ...src import parse_input, parse_float, execute_operation
+from src import parse_input, parse_float, execute_operation
 import pytest
 
 
